@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="92dp"
+    android:id="@+id/stores_layout">
+    <ImageView
+        android:layout_marginTop="4dp"
+        android:id="@+id/store_image"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="8dp" />
+    <LinearLayout
+        android:id="@+id/item_text_layout"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_marginRight="8dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/store_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Store Name"
+            android:textColor="@android:color/white"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:textAllCaps="true"/>
+        <TextView
+            android:id="@+id/address_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            tools:text="Store Address"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>
